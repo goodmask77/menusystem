@@ -1,0 +1,13 @@
+{{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.acceptSuggestionOnCommitCharacter": "on",
+  "editor.suggestSelection": "first"
+}
+}
