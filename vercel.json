@@ -1,11 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "public/**", "use": "@vercel/static" }
+    { "src": "public/**/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "^/$", "dest": "/public/index.html" },
-    { "src": "^/(styles\\.css)$", "dest": "/public/styles.css" },
-    { "src": "^/(script\\.js)$", "dest": "/public/script.js" }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
